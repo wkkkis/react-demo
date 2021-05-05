@@ -1,0 +1,60 @@
+.postsBlock{
+    padding: 20px;
+}
+
+.posts{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 90px 90px 90px 90px 90px 90px 90px;
+    grid-gap: 35px;
+}
+
+.textAreaBlocks button{
+    width: 71%;
+    height: 30px;
+    border-radius: 3px 3px 3px 3px;
+    background: #36393f;
+    border: none;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    outline: none;
+    transition: all 0.5s ease;
+    color: #cbc9c9;
+}
+
+.textAreaBlocks button:hover{
+    background: #202225;
+}
+
+.textAreaBlocks{
+    margin-left: 15%;
+}
+
+.textAreaBlocks img{
+    margin-left: -1.5px;
+    margin-top: 1px;
+}
+
+.postsBlocksMini{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.textAreaBlocks textarea{
+    width: 70%;
+    height: 25px;
+    border-radius: 3px 3px 3px 3px;
+    border: none;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    outline: none;
+    transition: all 0.5s ease;
+    resize: none;
+    color: #cbc9c9;
+    font-family: sans-serif;
+    font-size: 20px;
+    background: #202225;
+}
+
+.textAreaBlocks textarea:focus{
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    background: #36393f;
+}

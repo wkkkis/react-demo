@@ -1,0 +1,77 @@
+.footerMain{
+    margin-top: 30px;
+    grid-area: f;
+    margin-bottom: 10px;
+    /* border-bottom: 1px solid rgb(95, 95, 95); */
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    background: #2f3136;
+    border-radius: 5px;
+    display: grid;
+    grid-template-areas:
+            "r t"
+            "f f";
+    grid-template-rows: 110px 10px;
+    grid-template-columns: 30% 80%;
+    grid-gap:10px;
+}
+
+.textFooter span {
+    color: #202225;
+}
+.textFooter h1 {
+    color: #cbc9c9;
+    transition: all 0.5s ease;
+}
+.textFooter a{
+    text-decoration: none;
+}
+
+.textFooter{
+    margin-left: 35%;
+    margin-top: -20px;
+}
+
+.imageFooter{
+    margin-top: 10px;
+    margin-left: 10px;
+    grid-area: r;
+    height: 115px;
+    width: 200px;
+}
+
+.socialFooter img{
+    width: 30px;
+    margin-left: 5px;
+}
+
+.socialFooter{
+    margin-left: 10px;
+}
+
+.dateSite{
+    margin-left: 40%;
+    grid-area: f;
+    margin-top: -1.5%;
+}
+
+.dateSite span{
+    font-size: 13px;
+    color: #cbc9c9;
+}
+
+.aboutMe{
+    grid-area: t;
+    background: #2f3136;
+    margin-right: 30%;
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+}
+
+.aboutMe a{
+    text-decoration: none;
+    color: #cbc9c9;
+}
+.aboutMe a:hover{
+    border-bottom: 1px solid #cbc9c9;
+}

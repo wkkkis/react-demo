@@ -1,0 +1,39 @@
+.numberPage span{
+    cursor: pointer;
+    transition: all 0.5s ease;
+    padding: 5px 10px 5px 10px;
+    color: #cbc9c9;
+}
+
+.numberPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.3%;
+}
+
+.numberPage span:hover{
+    color: #737373;
+}
+
+.spanPage {
+    color: #b9bbbe;
+    border: 1px solid white;
+}
+
+.spanDiv{
+    padding: 5px;
+}
+
+button{
+    background: none;
+    border: none;
+}
+
+.back{
+    transform: rotate(90deg);
+}
+
+.next{
+    transform: rotate(-90deg)
+}

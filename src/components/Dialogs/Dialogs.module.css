@@ -1,0 +1,61 @@
+.dialogs{
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 3fr 10fr;
+    grid-template-areas:
+            "f m"
+            "f s";
+}
+
+.dialogsItem a{
+    color: #cbc9c9;
+    text-decoration: none;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    margin-left: 35%;
+    font-family: sans-serif;
+}
+
+.dialogsItem{
+    width: 100%;
+    grid-area: f;
+}
+
+.dialog{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    height: 70px;
+}
+
+.messages{
+    padding: 10px 10px 5px 10px;
+    border-left: 1px solid rgba(0, 0, 0, .2);
+    grid-area: m;
+    height: 430px;
+}
+
+.dialog img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.avaItem{
+    margin-left: 40%;
+    margin-top: 10px;
+}
+
+.dialogsForm{
+    grid-area: s;
+}
+
+.dialogsMessageDiv{
+    padding: 15px;
+    border-radius: 5px;
+    background: #202225;
+    min-width: 5px;
+    max-width: 60%;
+}
+
+.dialogsMessageDiv span{
+    color: #cbc9c9;
+}

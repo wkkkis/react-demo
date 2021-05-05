@@ -1,0 +1,55 @@
+.header {
+    grid-area: h;
+    /* border-bottom: 1px solid rgb(95, 95, 95); */
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    background: #2f3136;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+}
+
+.header_logo h1 {
+    color: #cbc9c9;
+    transition: all 0.5s ease;
+}
+
+.header_logo span {
+    color: #202225;
+}
+
+.header_logo {
+    height: 70px;
+    width: 20%;
+}
+
+.logo {
+    margin-top: -10px;
+    margin-left: 69px;
+    outline: none;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.authIdentification{
+    margin-right: 60px;
+    height: 60px;
+}
+
+.authIdentification a{
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.authIdentification a:hover{
+    color: #a2a2a2;
+}
+
+.navIden {
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+

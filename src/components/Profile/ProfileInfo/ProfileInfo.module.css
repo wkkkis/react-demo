@@ -1,0 +1,111 @@
+.avaDescription{
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    display: grid;
+    grid-template-columns: 100px 2fr 150px;
+    grid-gap: 20px;
+}
+
+.avaImage{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}
+
+.jobDescription{
+    display: grid;
+    grid-template-columns: 200px;
+}
+
+.answerForDescription span{
+    color:white
+}
+
+.forDescription{
+    font-size: 15px;
+    color: #b9bbbe;
+}
+
+.mainName span{
+    font-size: 17px;
+    color:white
+}
+
+.mainStatus {
+    font-size: 15px;
+    color: #b9bbbe;
+}
+
+/*profileStatus*/
+
+.selectUser input, p{
+    user-select: none;
+    cursor: pointer;
+}
+
+.selectUserParagraph p{
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+.selectUserParagraph{
+    width: 60px;
+}
+.selectUserParagraph p:hover{
+    color: white;
+}
+
+.mainStatusDescription{
+    margin-top: 5px;
+}
+
+.inputEditMode{
+    width: 30%;
+    height: 25%;
+    background: #2f3136;
+    border-radius: 5px;
+    position: fixed;
+}
+
+.inputEditMode input{
+    width: 78%;
+    height: 30px;
+    margin-left: 10%;
+    margin-top: 15%;
+    background: #202225;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.inputEditMode button{
+    width: 35%;
+    height: 25px;
+    margin-left: 32.5%;
+    margin-top: 5%;
+    background: #202225;
+    border:none;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    color: white;
+}
+
+.inputEditMode button:hover{
+    background: #36393f;
+}
+
+.inputEditMode img{
+    float:right;
+}
+
+.overlay{
+    position: fixed;
+    left: 0; right: 0; top: 0; bottom: 0;
+    background: black;
+    opacity: .7;
+    min-height: 1110px;
+}
+
+.img_content img{
+    border-radius: 5px;
+}

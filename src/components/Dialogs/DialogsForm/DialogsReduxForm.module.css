@@ -1,0 +1,35 @@
+.dialogForm{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.dialogForm input{
+    height: 30px;
+    width: 99.5%;
+    border-radius: 5px 0 0 5px ;
+    border:none;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    outline: none;
+    color: #cbc9c9;
+    font-family: sans-serif;
+    background: #202225;
+    transition: all 0.5s ease;
+}
+
+.dialogForm button{
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    border:none;
+    background: #36393f;
+    outline: none;
+    transition: all 0.5s ease;
+    color: #cbc9c9;
+    border-radius: 0 5px 5px 0;
+}
+.dialogForm button:hover{
+    background: #202225;
+}
+
+.dialogForm input:focus{
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    background: #36393f;
+}

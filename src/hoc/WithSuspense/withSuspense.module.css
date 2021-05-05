@@ -1,0 +1,13 @@
+.fullLoading{
+    width: 100%;
+    background: #2f3136;
+}
+
+.fullLoading span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #b9bbbe;
+    margin-top: 15%;
+}
