@@ -1,35 +1,50 @@
-.avaDescription{
-    padding: 20px;
+.avaDescription {
+    padding: 10px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
     display: grid;
-    grid-template-columns: 100px 2fr 150px;
+    grid-template-columns: 180px 60% 30%;
     grid-gap: 20px;
 }
 
-.avaImage{
-    width: 100px;
-    height: 100px;
+.mainFullNameDescription {
+    margin-top: 1%;
+}
+
+.miniAvaMain{
+    margin-left: 17%;
+}
+
+.avaImage {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px 10px 60px 60px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}
+
+.allUserAva {
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
 }
 
-.jobDescription{
+.jobDescription {
     display: grid;
     grid-template-columns: 200px;
 }
 
-.answerForDescription span{
-    color:white
+.answerForDescription span {
+    color: white
 }
 
-.forDescription{
+.forDescription {
     font-size: 15px;
     color: #b9bbbe;
 }
 
-.mainName span{
+.mainName span {
     font-size: 17px;
-    color:white
+    color: white
 }
 
 .mainStatus {
@@ -37,37 +52,42 @@
     color: #b9bbbe;
 }
 
+
 /*profileStatus*/
 
-.selectUser input, p{
+.selectUser input, p {
     user-select: none;
     cursor: pointer;
 }
 
-.selectUserParagraph p{
+.selectUserParagraph p {
     font-size: 13px;
     transition: all 0.3s ease;
 }
-.selectUserParagraph{
+
+.selectUserParagraph {
     width: 60px;
 }
-.selectUserParagraph p:hover{
+
+.selectUserParagraph p:hover {
     color: white;
 }
 
-.mainStatusDescription{
+.mainStatusDescription {
     margin-top: 5px;
 }
 
-.inputEditMode{
+.inputEditMode {
     width: 30%;
     height: 25%;
     background: #2f3136;
     border-radius: 5px;
     position: fixed;
+    margin-top: -5%;
+    margin-left: 5%;
 }
 
-.inputEditMode input{
+.inputEditMode input {
     width: 78%;
     height: 30px;
     margin-left: 10%;
@@ -78,34 +98,97 @@
     border-radius: 5px;
 }
 
-.inputEditMode button{
+.inputEditMode button {
     width: 35%;
     height: 25px;
     margin-left: 32.5%;
     margin-top: 5%;
     background: #202225;
-    border:none;
+    border: none;
     border-radius: 5px;
     transition: all 0.5s ease;
     color: white;
 }
 
-.inputEditMode button:hover{
+.inputEditMode button:hover {
     background: #36393f;
 }
 
-.inputEditMode img{
-    float:right;
+.inputEditMode img {
+    float: right;
 }
 
-.overlay{
+.overlay {
     position: fixed;
-    left: 0; right: 0; top: 0; bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     background: black;
     opacity: .7;
     min-height: 1110px;
 }
 
-.img_content img{
+.img_content img {
+    border-radius: 10px;
+}
+
+.img_content{
+    padding: 1%;
+}
+
+/* profile avatar */
+
+.profileAvatarPage {
+    margin-left: 100%;
+    margin-top: -117%;
+    height: 20px;
+    cursor: pointer;
+}
+
+.mainProfileAva {
+    position: absolute;
+    width: 100px;
+}
+
+.profileAvatarEditMode{
+    z-index: 4;
+    width: 400px;
+    position: fixed;
+    height: 150px;
+    margin-left: 15%;
+    margin-top: -10%;
+    padding: 20px;
+    border-radius: 10px;
+    background: #2f3136;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    list-style: none;
+}
+
+.profileAvatarEditMode button{
+    width: 35%;
+    height: 25px;
+    margin-left: 32.5%;
+    margin-top: 3%;
+    background: #202225;
+    border: none;
     border-radius: 5px;
+    transition: all 0.5s ease;
+    color: #b9bbbe;
+}
+
+.profileAvatarEditMode button:hover {
+    background: #36393f;
+    color: white;
+}
+
+.profileAvatarEditMode input{
+    border: none;
+    background: #202225;
+}
+
+.exitAvatarEditMode{
+    position: fixed;
+    margin-top: -1.2%;
+    margin-left: 380px;
 }

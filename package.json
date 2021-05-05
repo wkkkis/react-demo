@@ -2,7 +2,7 @@
   "name": "react-1",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://wkkkis.github.io/iss-social-network",
+  "homepage": "https://wkkkis.github.io/react-demo/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",

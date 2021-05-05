@@ -12,11 +12,13 @@ const MyPosts = props => {
 
     return (
         <div className={s.postsBlock}>
+            {props.isOwner &&
             <div className={s.postsBlocksMini}>
                 <div className={s.textAreaBlocks}>
                     <MyPostReduxForm onSubmit={onSubmit}/>
                 </div>
             </div>
+            }
             <div className={s.posts}>
                 {postsElement}
             </div>

@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import './App.css';
 import Nav from './components/Navbar/Nav';
-import {BrowserRouter, Route, withRouter} from "react-router-dom";
+import {HashRouter, Route, withRouter} from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import HeaderContainer from "./components/Header/HeaderContainer";
 import {connect, Provider} from "react-redux";
@@ -72,11 +72,11 @@ let AppContainer = compose(
 (App);
 
 const MainApp = () => {
-    return <BrowserRouter>
+    return <HashRouter basename={process.env.PUBLIC_URL}>
         <Provider store={store}>
             <AppContainer/>
         </Provider>
-    </BrowserRouter>
+    </HashRouter>
 }
 
 export default MainApp

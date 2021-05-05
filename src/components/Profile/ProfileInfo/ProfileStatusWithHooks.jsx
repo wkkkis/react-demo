@@ -32,9 +32,11 @@ const ProfileStatus = (props) => {
             {!editMode &&
             <div className={s.selectUser}>
                 <span>{props.status}</span>
+                {props.isOwner &&
                 <div className={s.selectUserParagraph}>
                     <p onClick={activeEditMode}>Edit status</p>
                 </div>
+                }
             </div>
             }
             {editMode &&
