@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import Profile from "./Profile";
 import {connect} from "react-redux";
 import {getUserProfile, getUserStatus, savePhoto, updateUsersStatus} from "../../redux/profile-reducer";
-import {withRouter} from "react-router-dom";
+import {withRouter} from "react-router";
 import {withAuthRedirect} from "../../hoc/withAuthRedirect";
 import {compose} from "redux";
 
@@ -15,7 +15,7 @@ const ProfileContainer = (props) => {
         }
         props.getUserProfile(userId);
         props.getUserStatus(userId);
-    })
+    }, [props.match.params.userId]);
 
     return (
         <Profile owner={!props.match.params.userId} {...props}/>

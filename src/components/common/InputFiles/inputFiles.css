@@ -32,7 +32,6 @@
     max-width: 290px;
     height: 60px;
     background: #202225;
-    color: #b9bbbe;
     font-size: 1.125rem;
     font-weight: 700;
     display: -webkit-box;
@@ -49,5 +48,11 @@
 }
 
 .input__file-button-text{
+    color: #8d8e90;
+    margin-left: 9%;
+    transition: all 0.5s ease;
+}
+
+.input__file-button-text:hover{
     color: #b9bbbe;
 }

@@ -18,11 +18,9 @@ const ProfileUserAvatar = ({savePhoto}) => {
     }
 
     let handleSubmit = (e) => {
-        debugger
         if(e.target.files.length){
-            debugger
             savePhoto(e.target.files[0])
-            setEditMode(false)
+            saveAvatar()
         }
     }
 
@@ -34,7 +32,7 @@ const ProfileUserAvatar = ({savePhoto}) => {
             </div>
             }
             {editMode &&
-            <div>
+            <div className={s.profileAvatarDrop}>
                 <div className={s.overlay} onClick={closeEditAva}>
                 </div>
 

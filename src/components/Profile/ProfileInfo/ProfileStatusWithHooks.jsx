@@ -30,7 +30,7 @@ const ProfileStatus = (props) => {
     return (
         <div className={s.mainStatusDescription}>
             {!editMode &&
-            <div className={s.selectUser}>
+            <div className={s.selectUserMain}>
                 <span>{props.status}</span>
                 {props.isOwner &&
                 <div className={s.selectUserParagraph}>
