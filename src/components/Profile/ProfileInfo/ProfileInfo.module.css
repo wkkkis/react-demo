@@ -2,20 +2,16 @@
     padding: 10px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
     display: grid;
-    grid-template-columns: 150px 20% 40% 160px;
-    grid-gap: 20px;
+    grid-template-columns: 150px 200px 20% 20% 90px 50px;
+    grid-gap: 30px;
     margin-top: -1%;
-}
-
-.mainFullNameDescription {
-    margin-top: 1%;
 }
 
 .avaImage {
     width: 125px;
     height: 125px;
     border-radius: 50%;
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 
 .allUserAva {
@@ -25,20 +21,18 @@
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
 }
 
-.jobDescription {
-    display: grid;
-    grid-template-columns: 100%;
-    padding: 10px;
-    width: 100%;
+.answerForDescription span {
+    color: #b9bbbe;
 }
 
-.answerForDescription span {
-    color: white
+.answerForDescription{
+    margin-top: 10px;
 }
 
 .forDescription {
     font-size: 15px;
-    color: #b9bbbe;
+    color: white;
+    font-family: sans-serif;
 }
 
 .mainName span {
@@ -54,11 +48,6 @@
 .miniAvaMain{
     margin-left: 30px;
 }
-
-.aboutMeDescription{
-    background: #8990a0;
-}
-
 /*profileStatus*/
 
 .selectUser{
@@ -85,6 +74,11 @@
 
 .mainStatusDescription {
     margin-top: 5px;
+}
+
+.selectUserMain{
+    word-wrap:break-word;
+    max-width: 250px;
 }
 
 .inputEditMode {
@@ -126,17 +120,6 @@
 
 .inputEditMode img {
     float: right;
-}
-
-.overlay {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: black;
-    opacity: .7;
-    min-height: 1110px;
 }
 
 .img_content img {
@@ -208,4 +191,16 @@
     position: fixed;
     margin-top: -1.2%;
     margin-left: 380px;
+}
+
+/*profile about me */
+
+.aboutMeBlock{
+    width: 150px;
+}
+
+/*profile jobs desription*/
+
+.jobsDecriptionBlock{
+    max-width: 150px;
 }

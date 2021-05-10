@@ -1,6 +1,5 @@
 import React from "react";
 import s from "./FormControl.module.css";
-import {Field} from "react-final-form";
 
 export const renderField = Element => field => {
     return (

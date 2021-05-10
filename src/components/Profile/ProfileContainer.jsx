@@ -1,7 +1,12 @@
 import React, {useEffect} from 'react';
 import Profile from "./Profile";
 import {connect} from "react-redux";
-import {getUserProfile, getUserStatus, savePhoto, updateUsersStatus} from "../../redux/profile-reducer";
+import {
+    getUserProfile,
+    getUserStatus,
+    savePhoto,
+    updateUsersStatus
+} from "../../redux/profile-reducer";
 import {withRouter} from "react-router";
 import {withAuthRedirect} from "../../hoc/withAuthRedirect";
 import {compose} from "redux";

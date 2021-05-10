@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
-import s from './ProfileInfo.module.css';
-import exitButton from './../../../assets/images/hoverExit.png';
+import s from '../ProfileInfo.module.css';
+import exitButton from '../../../../assets/images/hoverExit.png';
+import Overlay from "../../../common/Overlay/Overlay";
 
 const ProfileStatus = (props) => {
     let [editMode, setEditMode] = useState(false)
@@ -42,8 +43,7 @@ const ProfileStatus = (props) => {
             {editMode &&
             <div className={s.selectUser}>
 
-                <div className={s.overlay} onClick={closeEditMode}>
-                </div>
+                <Overlay editFunc={closeEditMode}/>
 
                 <div className={s.inputEditMode}>
                     <div>

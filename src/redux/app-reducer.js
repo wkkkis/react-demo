@@ -26,7 +26,7 @@ export const initializedApp = () => (dispatch) => {
     Promise.all([promise]).then(() => {
         setTimeout(() => {
             dispatch(initializedCreator())
-        }, 3000)
+        }, 2000)
     })
 }
 

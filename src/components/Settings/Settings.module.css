@@ -1,0 +1,95 @@
+.form{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding: 15px;
+}
+
+.form label{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #b9bbbe;
+    font-size: 15px;
+}
+
+.form input{
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+    width: 300px;
+    height: 30px;
+    background: #202225;
+    color: #b9bbbe;
+    padding-left: 3px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.5s ease;
+}
+
+.form input:focus{
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    background: #36393f;
+    color: white;
+}
+
+.form textarea{
+    width: 300px;
+    height: 100px;
+    margin-bottom: 5px;
+    border-radius:3px;
+    border: none;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    outline: none;
+    transition: all 0.5s ease;
+    resize: none;
+    color: #cbc9c9;
+    font-family: sans-serif;
+    font-size: 20px;
+    background: #202225;
+}
+
+.buttons{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.form button{
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    width: 200px;
+    height: 40px;
+    margin-top: 5%;
+    background: #202225;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.5s ease;
+    color: white;
+}
+
+.form button:hover {
+    background: #36393f;
+    box-shadow: 0 0 4px black;
+}
+
+.chekblock input{
+    box-shadow: none;
+}
+
+.labelError label{
+    color: red;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: #FFFFFF;
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5) inset;
+    transition: background-color 5000s ease-in-out 0s;
+}

@@ -5,7 +5,7 @@ import {connect} from "react-redux";
 import {Redirect} from "react-router";
 const Login = (props) => {
     const onSubmit = async values => {
-        props.login(values.email, values.password, values.rememberMe)
+        props.login(values.email, values.password, values.rememberMe, values.captcha)
     }
 
     if(props.isAuth){
@@ -21,7 +21,8 @@ const Login = (props) => {
 let mapDispatchToProps = (state) => {
     return {
         isAuth: state.auth.isAuth,
-        messages: state.auth.messages
+        messages: state.auth.messages,
+        captcha: state.auth.captcha
     }
 }
 

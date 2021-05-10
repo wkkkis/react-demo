@@ -17,7 +17,7 @@ const UsersContainer = React.lazy(() => import('./components/Users/UsersContaine
 const Login = React.lazy(() => import('./components/Login/Login'));
 const News = React.lazy(() => import('./components/News/News'));
 const Music = React.lazy(() => import('./components/Music/Music'));
-const Settings = React.lazy(() => import('./components/Settings/Settings'));
+const SettingsContainer = React.lazy(() => import('./components/Settings/SettingsContainer'));
 
 const App = ({initializedApp, ...props}) => {
     useEffect(() => {
@@ -51,7 +51,7 @@ const App = ({initializedApp, ...props}) => {
                     <Route path='/music'
                            render={withSuspense(Music)}/>
                     <Route path='/settings'
-                           render={withSuspense(Settings)}/>
+                           render={withSuspense(SettingsContainer)}/>
                 </div>
                 <Footer/>
             </div>

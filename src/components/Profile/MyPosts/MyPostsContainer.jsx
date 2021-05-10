@@ -6,13 +6,18 @@ import {connect} from "react-redux";
 
 const MyPostsContainer = props => {
     return (
-        <MyPosts isOwner={props.isOwner} {...props}/>
+        <>
+        {
+            props.profile && <MyPosts isOwner={props.isOwner} {...props}/>
+        }
+        </>
     )
 }
 
 
 let mapStateToProps = (state) => {
     return {
+        profile: state.profilePage.profile,
         newPostText: state.profilePage.newPostText,
         posts: state.profilePage.posts
     }
@@ -20,7 +25,7 @@ let mapStateToProps = (state) => {
 
 let mapDispatchToProps = (dispatch) => {
     return {
-        addPost:(textForPost) => {
+        addPost: (textForPost) => {
             dispatch(addPostActionCreator(textForPost))
         }
     }

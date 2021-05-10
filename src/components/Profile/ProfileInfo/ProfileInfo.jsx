@@ -2,8 +2,14 @@ import React from 'react';
 import s from './ProfileInfo.module.css';
 import Preloader from "../../common/preloader/Preloader";
 import defaultava from '../../../assets/images/defaultava.png';
-import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
-import ProfileUserAvatar from "./ProfileAvatarWithHooks";
+import ProfileStatusWithHooks from "./ProfileStatus/ProfileStatusWithHooks";
+import ProfileUserAvatar from "./ProfileAvatar/ProfileAvatarWithHooks";
+import bgInfo from "../../../assets/images/profileInfo.png"
+import ContactsContainer from "./ProfileContacts/ContactsContainer";
+import setting from "../../../assets/images/settings.png"
+import {NavLink} from "react-router-dom";
+import AboutMe from "./ProfileAboutMe/AboutMe";
+import JobsDescription from "./ProfileDescription/JobsDescription";
 
 const ProfileInfo = (props) => {
     if (!props.profile) {
@@ -13,9 +19,7 @@ const ProfileInfo = (props) => {
     return (
         <div>
             <div className={s.img_content}>
-                <img
-                    src={"https://1vc0.ru/wp-content/uploads/2014/11/temnota-depressii-e1417182659505.jpg"}
-                    width="100%" height="200px" alt="image"/>
+                <img src={bgInfo} alt="image" width="100%"/>
             </div>
             <div className={s.avaDescription}>
                 <div className={s.miniAvaMain}>
@@ -27,44 +31,30 @@ const ProfileInfo = (props) => {
                         }
                     </div>
                 </div>
-                <div className={s.mainFullNameDescription}>
-                    <div className={s.mainName}><span>{props.profile.fullName}</span></div>
+                <div>
+                    <div className={s.mainName}>
+                        <span>{props.profile.fullName}</span>
+                    </div>
                     <div className={s.mainStatus}><ProfileStatusWithHooks {...props}/></div>
                 </div>
-                <div className={s.aboutMeDescription}>
-                    <div><span>Contact:</span>
-                        {Object.keys(props.profile.contacts).map(key => {
-                            return <Contact key={key} contactTitle={key} contactValue={props.profile.contacts[key]}/>
-                        })}</div>
+                <div className={s.aboutMeBlock}>
+                    <AboutMe aboutMe={props.profile.aboutMe}/>
                 </div>
-                <div className={s.jobDescription}>
-                    <div><span className={s.forDescription}>Looking for a job ?</span></div>
-                    <div className={s.answerForDescription}>
-                        {props.profile.lookingForAJob ? <span>yes</span> : <span>no</span>}
-                    </div>
-                    {props.profile.lookingForAJob &&
-                    <div><span className={s.forDescription}>item description:</span></div>
-                    }
-                    {props.profile.lookingForAJob &&
-                    <div className={s.answerForDescription}><span>{props.profile.lookingForAJobDescription}</span></div>
-                    }
-
+                <div className={s.jobsDecriptionBlock}>
+                    <JobsDescription lookingForAJob={props.profile.lookingForAJob}
+                                     lookingForAJobDescription={props.profile.lookingForAJobDescription}/>
                 </div>
+                <div>
+                    <ContactsContainer contacts={props.profile.contacts}/>
+                </div>
+                {props.isOwner &&
+                <div>
+                    <NavLink to="/settings"><img title="settings" src={setting} alt="" width="20px"/></NavLink>
+                </div>
+                }
             </div>
         </div>
     );
 }
-
-export const Contact = ({contactTitle, contactValue}) => {
-    return <div>
-        <div>
-            <span>{contactTitle}:</span>
-        </div>
-        <div>
-            <a href={contactValue}>{contactValue}</a>
-        </div>
-    </div>
-}
-
 
 export default ProfileInfo;

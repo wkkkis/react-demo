@@ -17,6 +17,7 @@ import {
     getTotalCount,
     getUsers
 } from "../../redux/users-selectors";
+import {withAuthRedirect} from "../../hoc/withAuthRedirect";
 
 
 const UsersContainer = ({currentPage, pageSize, getUsersPage, ...props}) => {
@@ -57,5 +58,6 @@ let mapStateTopProps = (state) => {
 }
 
 export default compose(
-    connect(mapStateTopProps, {follow, unfollow, setCurrent, isFollowingProgression, getUsersPage})
+    connect(mapStateTopProps, {follow, unfollow, setCurrent, isFollowingProgression, getUsersPage}),
+    withAuthRedirect
 )(UsersContainer);
