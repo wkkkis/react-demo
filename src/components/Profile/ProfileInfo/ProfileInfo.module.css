@@ -1,24 +1,25 @@
 .avaDescription {
-    padding: 10px;
+    padding: 1%;
+    max-width: 100%;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
     display: grid;
-    grid-template-columns: 150px 200px 20% 20% 90px 50px;
-    grid-gap: 30px;
+    grid-template-columns: 12% 20% 19% 19% 10% 5%;
+    grid-gap: 3%;
     margin-top: -1%;
 }
 
 .avaImage {
-    width: 125px;
-    height: 125px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 
 .allUserAva {
-    width: 125px;
-    height: 125px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 
 .answerForDescription span {
@@ -26,7 +27,7 @@
 }
 
 .answerForDescription{
-    margin-top: 10px;
+    margin-top: 3%;
 }
 
 .forDescription {
@@ -46,7 +47,7 @@
 }
 
 .miniAvaMain{
-    margin-left: 30px;
+    margin-left: 10%;
 }
 /*profileStatus*/
 
@@ -65,7 +66,7 @@
 }
 
 .selectUserParagraph {
-    width: 60px;
+    width: 30%;
 }
 
 .selectUserParagraph p:hover {
@@ -78,7 +79,7 @@
 
 .selectUserMain{
     word-wrap:break-word;
-    max-width: 250px;
+    max-width: 100%;
 }
 
 .inputEditMode {
@@ -124,6 +125,7 @@
 
 .img_content img {
     border-radius: 10px;
+    width: 100%;
 }
 
 .img_content{
@@ -133,22 +135,18 @@
 /* profile avatar */
 
 .profileAvatarPage {
-    margin-left: -25%;
-    margin-top: -117%;
-    height: 20px;
+    width: 1%;
+    height: 2%;
     cursor: pointer;
     transition: all 0.5s ease;
+    position: absolute;
+    margin-top: -117px;
+    margin-left: -1%;
 }
 
 .profileAvatarDrop{
     margin-left: -5%;
     position: fixed;
-}
-
-.mainProfileAva {
-    position: absolute;
-    width: 100px;
-    margin-top: -6px;
 }
 
 .profileAvatarEditMode{
@@ -196,11 +194,11 @@
 /*profile about me */
 
 .aboutMeBlock{
-    width: 150px;
+    width: 100%;
 }
 
 /*profile jobs desription*/
 
-.jobsDecriptionBlock{
-    max-width: 150px;
+.jobsDescriptionBlock{
+    max-width: 100%;
 }

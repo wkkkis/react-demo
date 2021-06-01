@@ -21,7 +21,6 @@
 }
 
 .dialog{
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
     height: 70px;
 }
 
@@ -49,13 +48,13 @@
 }
 
 .dialogsMessageDiv{
-    padding: 15px;
-    border-radius: 5px;
-    background: #202225;
-    min-width: 5px;
-    max-width: 60%;
+    margin-top: 4%;
 }
 
 .dialogsMessageDiv span{
+    padding: 10px 15px 10px 15px;
+    background: #202225;
     color: #cbc9c9;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }

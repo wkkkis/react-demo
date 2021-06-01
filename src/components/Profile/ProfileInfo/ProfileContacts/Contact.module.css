@@ -1,0 +1,35 @@
+.moreContact{
+    width: 20%;
+    position: absolute;
+    background: #202225;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px #b9bbbe;
+    color: #b9bbbe;
+    left: 40%;
+    top: 30%;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.drop img{
+    transform: rotate(90deg);
+}
+
+.showMoreButton{
+    border-radius: 5px;
+    box-shadow: 0 0 3px #000000;
+    padding: 2px;
+    width: 90px;
+}
+
+.drop{
+    display: grid;
+    grid-template-columns: 70px 20px;
+}
+
+.drop button{
+    background: none;
+    border: none;
+    color: #b9bbbe;
+}

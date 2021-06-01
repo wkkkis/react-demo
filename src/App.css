@@ -64,3 +64,18 @@
   background: #202225;
   height: 0;
 }
+
+@media screen and (max-width: 1270px){
+  .app-wrapper{
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 1050px){
+  .app-wrapper{
+    width: 100%;
+    margin-left: 0;
+    grid-gap: 5px;
+  }
+}

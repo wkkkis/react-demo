@@ -58,20 +58,3 @@
     font-size: 13px;
     color: #cbc9c9;
 }
-
-.aboutMe{
-    grid-area: t;
-    background: #2f3136;
-    margin-right: 30%;
-    margin-top: 4%;
-    display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-}
-
-.aboutMe a{
-    text-decoration: none;
-    color: #cbc9c9;
-}
-.aboutMe a:hover{
-    border-bottom: 1px solid #cbc9c9;
-}

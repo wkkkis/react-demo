@@ -5,7 +5,7 @@
 .posts{
     padding: 20px;
     display: grid;
-    grid-template-columns: 90px 90px 90px 90px 90px 90px 90px;
+    grid-template-columns: 23% 23% 23% 23%;
     grid-gap: 35px;
 }
 

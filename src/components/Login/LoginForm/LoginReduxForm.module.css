@@ -2,17 +2,21 @@
     padding: 50px;
 }
 
+.formBlock{
+    display: grid;
+    justify-content: center;
+}
+
 .form{
-    width:165px;
+    width:190px;
     min-height: 100px;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-    margin-left: 40%;
 }
 
 .form input{
-    width: 160px;
+    width: 100%;   
     background-color: transparent;
     border:none;
     border-bottom: 1px solid  #202225;
@@ -22,11 +26,9 @@
     height: 18px;
 }
 
-.form img{
-    border-radius: 50%;
-    width: 50px;
-    margin-left: 35%;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+.formava{
+    display: grid;
+    justify-content: center;
 }
 
 .form button{
